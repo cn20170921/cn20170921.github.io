@@ -1,0 +1,286 @@
+
+$(function () {
+	// Slideshow
+	$("#slider").responsiveSlides({
+		auto: true,
+		pager: false,
+		nav: true,
+		speed: 500,
+		timeout:4000,
+		pager: true, 
+		pauseControls: true,
+		namespace: "callbacks"
+	});
+	
+	$(".main").hide();
+	$(".main2").hide();
+	$(".video").show();
+	$("#li1").css("background-color","#f73538");  
+	$("#li2").css("background-color",""); 
+	$("#li3").css("background-color","");
+	
+});
+function aClick (num) {  
+          if(num==1){
+		$("#hideId").val("1")
+		$(".main").hide();
+		$(".main2").hide();
+		$(".video").show();
+		$("#li1").css("background-color","#f73538");  
+		$("#li2").css("background-color",""); 
+		$("#li3").css("background-color","");
+	  }
+	  if(num==2){
+		$("#hideId").val("2")
+		$(".video").hide();
+		$(".main2").hide();
+		$(".main").show();
+		$("#li2").css("background-color","#f73538"); 
+		$("#li1").css("background-color",""); 
+		$("#li3").css("background-color","");
+          }
+	  if(num==3){
+		$("#hideId").val("3")
+		$(".video").hide();
+		$(".main").hide();
+		$(".main2").show();
+		$("#li3").css("background-color","#f73538"); 
+		$("#li1").css("background-color","");
+		$("#li2").css("background-color","");  
+          }
+}
+
+
+
+function js_bj(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15034';
+}
+function js_anhui(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15001';
+}
+function js_xinjiang(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15035';
+}
+function js_fujian(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15037';
+}
+function js_gansu(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15038';
+}
+function js_guangdong(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15039';
+}
+function js_guangxi(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15040';
+}
+function js_guizhou(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15042';
+}
+function js_hainan(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15043';
+}
+function js_henan(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15045';
+}
+function js_heilongjiang(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15047';
+}
+function js_hubei(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15048';
+}
+function js_hebei(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15044';
+}
+function js_hunan(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15049';
+}
+function js_jilin(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15051';
+}
+function js_jiangsu(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15052';
+}
+function js_jiangxi(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15054';
+}
+function js_liaoning(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15056';
+}
+function js_neimeng(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15058';
+}
+function js_ningxia(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15060';
+}
+function js_qinghai(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15061';
+}
+function js_shandong(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15062';
+}
+function js_shanxi(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15063';
+}
+function js_shanx(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15064';
+}
+function js_shanghai(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15065';
+}
+function js_sichuan(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15066';
+}
+function js_tianjin(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15067';
+}
+function js_xizang(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15068';
+}
+function js_xinjiang(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15069';
+}function js_yunnan(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15071';
+}
+function js_zhejiang(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15073';
+}
+function js_chongqing(){
+	window.location.href='http://new.newjobs.com.cn/NewJob.Cms/Default/Details/15074';
+}
+
+
+
+/*
+
+	华北	1
+	东北	2
+	华东	3
+	中南	4
+	西北	5
+	西南	6
+	港澳台	7
+
+*/
+function jumpRegion(region,obj){
+	
+	
+	if(region==1){
+			if($("#hideId").val()=='1'){
+				$(".hb_video").show();
+				$(".db_video").hide();
+				$(".hd_video").hide();
+				$(".zn_video").hide();
+				$(".xb_video").hide();
+				$(".xn_video").hide();
+				
+			}else if($("#hideId").val()=='2'){
+				$(".hb_gdzc").show();
+				$(".db_gdzc").hide();
+				$(".hd_gdzc").hide();
+				$(".zn_gdzc").hide();
+				$(".xb_gdzc").hide();
+				$(".xn_gdzc").hide();
+				
+			}
+		}
+		if(region==2){
+			if($("#hideId").val()=='1'){
+				$(".hb_video").hide();
+				$(".db_video").show();
+				$(".hd_video").hide();
+				$(".zn_video").hide();
+				$(".xb_video").hide();
+				$(".xn_video").hide();
+				
+			}else if($("#hideId").val()=='2'){
+				$(".hb_gdzc").hide();
+				$(".db_gdzc").show();
+				$(".hd_gdzc").hide();
+				$(".zn_gdzc").hide();
+				$(".xb_gdzc").hide();
+				$(".xn_gdzc").hide();
+				
+			}
+		}
+		if(region==3){
+			if($("#hideId").val()=='1'){
+				$(".hb_video").hide();
+				$(".db_video").hide();
+				$(".hd_video").show();
+				$(".zn_video").hide();
+				$(".xb_video").hide();
+				$(".xn_video").hide();
+				
+			}else if($("#hideId").val()=='2'){
+				$(".hb_gdzc").hide();
+				$(".db_gdzc").hide();
+				$(".hd_gdzc").show();
+				$(".zn_gdzc").hide();
+				$(".xb_gdzc").hide();
+				$(".xn_gdzc").hide();
+				
+			}
+		}
+		if(region==4){
+			if($("#hideId").val()=='1'){
+				$(".hb_video").hide();
+				$(".db_video").hide();
+				$(".hd_video").hide();
+				$(".zn_video").show();
+				$(".xb_video").hide();
+				$(".xn_video").hide();
+				
+			}else if($("#hideId").val()=='2'){
+				$(".hb_gdzc").hide();
+				$(".db_gdzc").hide();
+				$(".hd_gdzc").hide();
+				$(".zn_gdzc").show();
+				$(".xb_gdzc").hide();
+				$(".xn_gdzc").hide();
+				
+			}
+		}
+		if(region==5){
+			if($("#hideId").val()=='1'){
+				$(".hb_video").hide();
+				$(".db_video").hide();
+				$(".hd_video").hide();
+				$(".zn_video").hide();
+				$(".xb_video").show();
+				$(".xn_video").hide();
+				
+			}else if($("#hideId").val()=='2'){
+				$(".hb_gdzc").hide();
+				$(".db_gdzc").hide();
+				$(".hd_gdzc").hide();
+				$(".zn_gdzc").hide();
+				$(".xb_gdzc").show();
+				$(".xn_gdzc").hide();
+				
+			}
+		}
+		if(region==6){
+			if($("#hideId").val()=='1'){
+				$(".hb_video").hide();
+				$(".db_video").hide();
+				$(".hd_video").hide();
+				$(".zn_video").hide();
+				$(".xb_video").hide();
+				$(".xn_video").show();
+				
+			}else if($("#hideId").val()=='2'){
+				$(".hb_gdzc").hide();
+				$(".db_gdzc").hide();
+				$(".hd_gdzc").hide();
+				$(".zn_gdzc").hide();
+				$(".xb_gdzc").hide();
+				$(".xn_gdzc").show();
+				
+			}
+		}
+		if(region==7){
+			alert("暂无港澳台信息！");
+		}
+		
+}
+
